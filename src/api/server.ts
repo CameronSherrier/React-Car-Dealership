@@ -2,7 +2,7 @@ const token = '63f76a310e4c90b8ab7856f6b77532ee3325f0bc315e42d7';
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`http://127.0.0.1:5000/api/cars`,
+        const response = await fetch(`https://car-api-43eg.onrender.com/api/cars`,
         {
             method: 'GET',
             headers: {
@@ -20,7 +20,7 @@ export const server_calls = {
     },
 
     create: async (data: any = {}) => {
-        const response = await fetch(`http://127.0.0.1:5000/api/cars`,
+        const response = await fetch(`https://car-api-43eg.onrender.com/api/cars`,
         {
             method: 'POST',
             headers: {
@@ -39,7 +39,7 @@ export const server_calls = {
     },
 
     update: async (id: string, data: any = {}) => {
-        const response = await fetch(`http://127.0.0.1:5000/api/cars/${id}`,
+        const response = await fetch(`https://car-api-43eg.onrender.com/api/cars/${id}`,
         {
             method: 'POST',
             headers: {
@@ -58,7 +58,7 @@ export const server_calls = {
     },
 
     delete: async (id: string) => {
-        const response = await fetch(`http://127.0.0.1:5000/api/cars/${id}`,
+        const response = await fetch(`https://car-api-43eg.onrender.com/api/cars/${id}`,
         {
             method: 'DELETE',
             headers: {

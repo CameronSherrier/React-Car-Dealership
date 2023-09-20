@@ -8,11 +8,11 @@ import { chooseMake, chooseModel, chooseYear, chooseTransmission } from '../redu
 
 // interfaces
 
-interface ContactFormProps {
+interface CarFormProps {
   id?: string[];
 }
 
-const ContactForm = ( props: ContactFormProps ) => {
+const CarForm = ( props: CarFormProps ) => {
   const { register, handleSubmit } = useForm({})
   const dispatch = useDispatch();
   const store = useStore();
@@ -70,4 +70,4 @@ const ContactForm = ( props: ContactFormProps ) => {
   )
 }
 
-export default ContactForm
+export default CarForm
